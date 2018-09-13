@@ -1,8 +1,9 @@
-A. Name: Ruohan Sun
+Name: Ruohan Sun
 
-B. USC ID: 6539994087
+Summary:
+The system includes one client side, three server sides, one management side. After a request coming in, the search job will be done simultaneously by the three server sides and results will be integrated by the management side. The system supports lookup based on prefix & suffix in large scale at quick time.
 
-C. I have done all the assigned task including the optional part:
+The funciton include:
 	* Find the matching definition of a given word and display the definition on client and monitor screen.
 	* Find the one-edit-distance words and display one of them on the monitor screen.
 	* Find the matching words for a given prefix and display all of them on client and monitor screen.
@@ -86,6 +87,3 @@ H.
 	I referenced some code from "http://www.beej.us/guide/bgc/" to build the socket and the network address structure.
 	And I have labeled them in the source files.
 	
-
-
-Thank you for grading my project!
