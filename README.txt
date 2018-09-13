@@ -31,7 +31,7 @@ For each file:
 		- Create a UDP socket to send message to the backend servers.
 		- Begin looping to accept the coming TCP connection.
 		- Receive the commands given by the client.
-		- Send the commands to the three backend server and collect feed back results from the backend server using 		      UDP.
+		- Send the commands to the three backend server and collect feed back results from the backend server using UDP.
 		- Send the results back to the client and monitor using TCP.
 		- Close all the socket when terminate.
 	
@@ -72,11 +72,11 @@ For each file:
 	    	- using a loop to send all results, and the monitor will store them in a vector
 	    
 	* aws to backend server
-		- send a string containing commands message to the backend server, and the backend server will recover 			  information from it
+		- send a string containing commands message to the backend server, and the backend server will recover information from it
 	
 	* backend server to aws
 		- using a loop to send results to the aws, and the aws will store them in a vector.
-		- for the one-edit-distance words and it's definition, it will be sent by a string beginning with "#", and the 		         aws will distinguish it.
+		- for the one-edit-distance words and it's definition, it will be sent by a string beginning with "#", and the aws will distinguish it.
 
   
 
