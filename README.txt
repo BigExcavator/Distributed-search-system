@@ -69,14 +69,14 @@ For each file:
 		- using a loop to send all results, and the client will store them in a vector
 		
 	* aws to monitor
-	    - using a loop to send all results, and the monitor will store them in a vector
+	    	- using a loop to send all results, and the monitor will store them in a vector
 	    
 	* aws to backend server
-		- send a string containing commands message to the backend server, and the backend server will recover 			information from it
+		- send a string containing commands message to the backend server, and the backend server will recover 			  information from it
 	
 	* backend server to aws
 		- using a loop to send results to the aws, and the aws will store them in a vector.
-		- for the one-edit-distance words and it's definition, it will be sent by a string beginning with "#", and the 		       aws will distinguish it.
+		- for the one-edit-distance words and it's definition, it will be sent by a string beginning with "#", and the 		         aws will distinguish it.
 
   
 
