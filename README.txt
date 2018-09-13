@@ -12,13 +12,13 @@ The funciton include:
 	* My project can deal with input errors. If the user give illegal commands, the client will terminate
 		 and give some message to guide the user to give legal commands.
 	* My project will give error message when some error happens, including connection, sending, receiving and so forth. 
-	* My project can deal with different order of opening client and monitor. You can open client firstly or monitor firstly.
+	* My project can deal with different order of opening client and monitor. You can open client firstly or monitor 	   firstly.
 	
-D. For each file:
+For each file:
 
 	* client.cpp
 		- Read the commands given by the user.
-		- if the commands are illegal, the client will terminate and give relative message in order to guide the user to give legal commands.
+		- if the commands are illegal, the client will terminate and give relative message in order to guide the user 			to give legal commands.
 		- Create the socket and make the TCP connection with the aws.
 		- Send the commands to aws using TCP.
 		- Receive the results from aws using TCP.
@@ -31,7 +31,7 @@ D. For each file:
 		- Create a UDP socket to send message to the backend servers.
 		- Begin looping to accept the coming TCP connection.
 		- Receive the commands given by the client.
-		- Send the commands to the three backend server and collect feed back results from the backend server using UDP.
+		- Send the commands to the three backend server and collect feed back results from the backend server using 		      UDP.
 		- Send the results back to the client and monitor using TCP.
 		- Close all the socket when terminate.
 	
@@ -60,7 +60,7 @@ D. For each file:
 	* config.h
 		 store all the included header files, ports number, and constants of the project
 		
-E. Information format
+ Information format
 
 	* client to aws
 		- using a loop to send each command (eg. first loop send "search", second loop send "Hulk")
@@ -72,18 +72,11 @@ E. Information format
 	    - using a loop to send all results, and the monitor will store them in a vector
 	    
 	* aws to backend server
-		- send a string containing commands message to the backend server, and the backend server will recover information from it
+		- send a string containing commands message to the backend server, and the backend server will recover 			information from it
 	
 	* backend server to aws
 		- using a loop to send results to the aws, and the aws will store them in a vector.
-		- for the one-edit-distance words and it's definition, it will be sent by a string beginning with "#", and the aws will distinguish it.
+		- for the one-edit-distance words and it's definition, it will be sent by a string beginning with "#", and the 		       aws will distinguish it.
 
-G. 
-	My project just work well in all kinds of situations, including some extreme cases.
-		Such as finding the words matching suffix of "e".
-	My project is upper-lower letter sensitive, for example, the results of input Return and are not the same
+  
 
-H.
-	I referenced some code from "http://www.beej.us/guide/bgc/" to build the socket and the network address structure.
-	And I have labeled them in the source files.
-	
